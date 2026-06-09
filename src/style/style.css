@@ -56,6 +56,10 @@ nav a {
     font-size: 16px;
     font-weight: 600;
 
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+
     padding: 8px 20px;
     border: 1px solid #C9A227;
     border-radius: 100px;
@@ -64,6 +68,13 @@ nav a {
 button {
     color: #C9A227;
 }
+button:hover {
+    color: #fff;
+}
+
+.btn-yellow:hover {
+    background: #dbb535;
+} 
 
 .btn-yellow {
     background-color: #C9A227;
@@ -179,7 +190,7 @@ body {
 }
 
 #Hero-Second {
-    background: linear-gradient(180deg, #0A1628 11%, #17325B 56%, #CAD1DA 100%);
+    background: linear-gradient(180deg, #0A1628 11%, #17325B 70%, #CAD1DA 100%);
     padding: 112px 64px;
     display: flex;
     flex-direction: column;
@@ -280,4 +291,480 @@ body {
     font-weight: 400;
     color: #ffffff;
     margin-top: 16px;
+}
+
+#matricula {
+    background: linear-gradient(180deg, #CAD1DA 10%, #0F2040 25%, #0A1628 100%);
+    padding: 112px 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 72px;
+}
+ 
+.matricula-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 16px;
+}
+ 
+.label {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    letter-spacing: 4px;
+    color: #C9A227;
+}
+ 
+.matricula-header h1 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 64px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 1;
+}
+ 
+.matricula-header p {
+    font-family: 'Dm Sans', sans-serif;
+    max-width: 600px;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.65);
+    line-height: 1.7;
+}
+ 
+.vagas-badge {
+    display: inline-block;
+    background: rgba(201, 162, 39, 0.12);
+    border: 1px solid rgba(201, 162, 39, 0.3);
+    border-radius: 100px;
+    padding: 6px 20px;
+    font-family: 'Dm Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: #C9A227;
+}
+ 
+.matricula-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 64px;
+    width: 100%;
+    max-width: 1200px;
+}
+ 
+.passos {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.col-titulo {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #C9A227;
+    margin-bottom: 32px;
+}
+ 
+.passo {
+    display: flex;
+    gap: 24px;
+}
+ 
+.passo + .passo {
+    margin-top: 24px;
+}
+ 
+.passo-numero {
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #C9A227;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #C9A227;
+    background: rgba(201, 162, 39, 0.08);
+}
+ 
+.passo-texto {
+    flex: 1;
+    padding-bottom: 24px;
+}
+ 
+.passo-texto h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+    color: #fff;
+    margin-bottom: 8px;
+}
+ 
+.passo-texto p {
+    font-family: 'Dm Sans', sans-serif;
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.55);
+    line-height: 1.6;
+}
+ 
+.documentos {
+    display: flex;
+    flex-direction: column;
+}
+ 
+.docs-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+ 
+.doc-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(201, 162, 39, 0.2);
+    border-radius: 12px;
+    padding: 24px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    transition: background 0.2s, border-color 0.2s;
+}
+ 
+.doc-card:hover {
+    background: rgba(201, 162, 39, 0.08);
+    border-color: rgba(201, 162, 39, 0.5);
+}
+ 
+.doc-icone {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(201, 162, 39, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.doc-icone svg {
+    width: 20px;
+    height: 20px;
+    stroke: #C9A227;
+    fill: none;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+ 
+.doc-card h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #fff;
+}
+ 
+.doc-card p {
+    font-family: 'Dm Sans', sans-serif;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.45);
+    line-height: 1.5;
+}
+ 
+.banner-gratuito {
+    background: rgba(201, 162, 39, 0.08);
+    border: 1px solid rgba(201, 162, 39, 0.25);
+    border-radius: 12px;
+    padding: 20px 24px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+ 
+.banner-icone {
+    flex-shrink: 0;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(201, 162, 39, 0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+ 
+.banner-icone svg {
+    width: 22px;
+    height: 22px;
+    stroke: #C9A227;
+    fill: none;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+ 
+.banner-texto h4 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #C9A227;
+    letter-spacing: 1px;
+}
+ 
+.banner-texto p {
+    font-family: 'Dm Sans', sans-serif;
+    font-size: 13px;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 1.5;
+    margin-top: 2px;
+}
+
+#cta {
+    background: linear-gradient(180deg, #0A1628 0%, #0A1628 90%, #f4f2ee 100%);
+    padding: 120px 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+}
+ 
+.cta-badge {
+    display: inline-block;
+    border: 1px solid rgba(201, 162, 39, 0.45);
+    border-radius: 100px;
+    padding: 10px 30px;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 1.5px;
+    color: #C9A227;
+    text-transform: uppercase;
+}
+ 
+.cta-titulo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+ 
+.txt-branco {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 96px;
+    font-weight: 400;
+    color: #fff;
+    letter-spacing: 2px;
+}
+ 
+.txt-dourado {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 96px;
+    font-weight: 400;
+    color: #C9A227;
+    letter-spacing: 2px;
+}
+ 
+.cta-sub {
+    max-width: 560px;
+    font-family: 'Dm Sans', sans-serif;
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.6);
+    line-height: 1.75;
+}
+ 
+.cta-btns {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+ 
+.btn-principal {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #C9A227;
+    color: #0A1628;
+    font-family: 'Dm Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 14px 28px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s;
+}
+ 
+.btn-principal:hover {
+    background: #dbb535;
+    color: #fff;
+}
+ 
+.btn-principal svg {
+    width: 16px;
+    height: 16px;
+    stroke: currentColor;
+    fill: none;
+    stroke-width: 2.5;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+ 
+.btn-secundario {
+    display: inline-flex;
+    align-items: center;
+    color: #C9A227;
+    font-family: 'Dm Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 14px 28px;
+    border-radius: 100px;
+    border: 1px solid #C9A227;
+    cursor: pointer;
+    text-decoration: none;
+    transition: border-color 0.2s, color 0.2s;
+}
+ 
+.btn-secundario:hover {
+    border-color: rgba(255, 255, 255, 0.5);
+    color: #fff;
+}
+ 
+.cta-nota {
+    font-family: 'Dm Sans', sans-serif;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.35);
+}
+ 
+.cta-nota span {
+    color: rgba(201, 162, 39, 0.6);
+    margin-right: 4px;
+}
+ 
+#depoimentos {
+    background: linear-gradient(180deg, #f4f2ee 0%, #f4f2ee 50%, #f4f2ee 100%);
+    padding: 100px 64px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 56px;
+}
+ 
+.depoimentos-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    text-align: center;
+}
+ 
+.label-depoimentos {
+    display: inline-block;
+    border: 1px solid rgba(201, 162, 39, 0.5);
+    border-radius: 100px;
+    padding: 5px 18px;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 25px;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: #C9A227;
+    text-transform: uppercase;
+}
+ 
+.depoimentos-header h2 {
+    font-family: 'Dm Sans', sans-serif;
+    font-size: 40px;
+    font-weight: 400;
+    color: #1a2740;
+    line-height: 1.2;
+    max-width: 420px;
+}
+ 
+.depoimentos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    width: 100%;
+    max-width: 1200px;
+}
+ 
+.card-depoimento {
+    background: #fff;
+    border-radius: 16px;
+    padding: 32px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    box-shadow: 0 2px 16px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+ 
+.card-depoimento:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+ 
+.estrelas {
+    display: flex;
+    gap: 4px;
+}
+ 
+.estrelas svg {
+    width: 16px;
+    height: 16px;
+    fill: #C9A227;
+    stroke: none;
+}
+ 
+.card-depoimento blockquote {
+    font-family: 'Dm Sans', sans-serif;
+    font-size: 15px;
+    color: #3a4a60;
+    line-height: 1.7;
+}
+ 
+.autor {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+}
+ 
+.autor-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    flex-shrink: 0;
+}
+ 
+.autor-avatar.dourado { background: #C9A227; }
+.autor-avatar.azul    { background: #17325B; }
+.autor-avatar.cinza   { background: #4a6480; }
+ 
+.autor-nome {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1a2740;
+}
+ 
+.autor-cargo {
+    font-family: 'Dm Sans', sans-serif;
+    font-size: 12px;
+    color: rgba(26, 39, 64, 0.5);
+    margin-top: 2px;
 }
